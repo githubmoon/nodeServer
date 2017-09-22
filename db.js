@@ -32,6 +32,7 @@ exports.db2=function(reqest,response){
                 console.log(er);
             }
             var cc =JSON.stringify(results);
+            console.log(results);
             response.write(cc);
             response.end();
         })
